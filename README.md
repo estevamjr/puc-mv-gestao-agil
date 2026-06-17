@@ -1,9 +1,9 @@
 # T-SONAIR // Command Multiplexer & Governance Platform
 
 ## 0. Destaques Acadêmicos
-A Matriz de DoR (Definition of Ready): Explicar o LiveDoR, detalhando que a validação de prontidão ocorre via código no backend antes da issue nascer no Jira (esquemas estritos do Pydantic exigindo contexto e BDD com fluxos de sucesso e erro).
-O Manifesto de Engenharia (DoD Técnico): Explicar que os critérios técnicos (como testes automatizados e validações de borda) foram refinados pelo papel de Tech Lead sob o escopo do Épico [SCRUM-5], variando conforme a complexidade e o risco do componente.
-A Esteira DevSecOps (DoD de Processo Universal): Explicar o papel do AI Auditor. Deixar explícito no documento de leitura que o fechamento de 100% dos tickets do projeto é condicionado a uma trava automatizada: se o desenvolvedor tentar mover para 'Done' sem anexar a evidência técnica ou o link do Confluence, o sistema executa o rollback em milissegundos e gera o log de violação de compliance.  
+* A Matriz de DoR (Definition of Ready): Explicar o LiveDoR, detalhando que a validação de prontidão ocorre via código no backend antes da issue nascer no Jira (esquemas estritos do Pydantic exigindo contexto e BDD com fluxos de sucesso e erro).
+* O Manifesto de Engenharia (DoD Técnico): Explicar que os critérios técnicos (como testes automatizados e validações de borda) foram refinados pelo papel de Tech Lead sob o escopo do Épico [SCRUM-5], variando conforme a complexidade e o risco do componente.
+* A Esteira DevSecOps (DoD de Processo Universal): Explicar o papel do AI Auditor. Deixar explícito no documento de leitura que o fechamento de 100% dos tickets do projeto é condicionado a uma trava automatizada: se o desenvolvedor tentar mover para 'Done' sem anexar a evidência técnica ou o link do Confluence, o sistema executa o rollback em milissegundos e gera o log de violação de compliance.  
 
 ## 🎯 1. Cenário de Negócio e Contexto Acadêmico (PUC-Rio)
 O **T-SONAIR** é um middleware de governança e engenharia de requisitos automatizada, projetado para eliminar o gap operacional, a latência de processo e a fricção no fluxo de valor de equipes ágeis. 
