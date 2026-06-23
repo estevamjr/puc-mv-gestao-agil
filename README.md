@@ -11,13 +11,35 @@ A governança do ecossistema T-SONAIR conectou as diretrizes de qualidade da sol
 A governança do ecossistema T-SONAIR conectou as diretrizes de qualidade da solução com o fluxo de trabalho real da equipe durante a execução do projeto, operando através de três pilares fundamentais que unem o planejamento ágil tradicional à automação:
 
 #### 1. DoR da Solução e Sua Origem no Planejamento Ágil (O Começo de Tudo)
-O Definition of Ready (DoR) que deu o sinal verde para o início do desenvolvimento técnico nasceu formalmente no fechamento do Workshop Lean Inception e no rito de refinamento do Épico Master de Fundações (SCRUM-5). O critério de prontidão (DoR) humano estabelecido pelo time para iniciar a construção do backlog exigiu duas condições: a consolidação do sequenciador de ondas de valor de negócio e o desenho da arquitetura macro de segurança (Zero Trust). Uma vez cumpridos esses critérios analógicos de prontidão, o time iniciou a Sprint 1. Para perpetuar esse acordo e impedir que novas demandas quebrassem o padrão, esse DoR inicial foi posteriormente traduzido em código (automação) no middleware FastAPI por meio de esquemas rígidos do Pydantic, gerando o "LiveDoR". Na execução contínua, o desenvolvedor passou a operar via chat integrado ao LLM, onde o sistema exige o contexto técnico e a estrutura de BDD (cenários de sucesso e erro) com base nas regras de engenharia definidas naquele refinamento inicial. Se o insumo omitir as regras de exceção, o middleware rejeita o payload, provando que o DoR planejado na Inception controla ativamente o nascimento de tarefas no Jira.
+O Definition of Ready (DoR) que deu o sinal verde para o início do desenvolvimento técnico nasceu formalmente no fechamento do Workshop Lean Inception e no rito de refinamento do Épico Master de Fundações (SCRUM-5). 
+
+O critério de prontidão (DoR) humano estabelecido pelo time para iniciar a construção do backlog exigiu duas condições: a consolidação do sequenciador de ondas de valor de negócio e o desenho da arquitetura macro de segurança (Zero Trust). 
+
+Uma vez cumpridos esses critérios analógicos de prontidão, o time iniciou a Sprint 1. Para perpetuar esse acordo e impedir que novas demandas quebrassem o padrão, esse DoR inicial foi posteriormente traduzido em código (automação) no middleware FastAPI por meio de esquemas rígidos do Pydantic, gerando o "LiveDoR". 
+
+Na execução contínua, o desenvolvedor passou a operar via chat integrado ao LLM, onde o sistema exige o contexto técnico e a estrutura de BDD (cenários de sucesso e erro) com base nas regras de engenharia definidas naquele refinamento inicial. 
+
+Se o insumo omitir as regras de exceção, o middleware rejeita o payload, provando que o DoR planejado na Inception controla ativamente o nascimento de tarefas no Jira.
 
 #### 2. Manifesto de Engenharia e Variabilidade do DoD Técnico (O Acordo de Qualidade)
-Antes de qualquer código ser escrito, o time debateu no rito de planejamento como garantir a qualidade de componentes tão distintos quanto uma API e uma infraestrutura de rede. O acordo firmado, que originou o Manifesto de Engenharia T-SONAIR dentro do Épico SCRUM-5, estabeleceu que os critérios do Definition of Done (DoD) da solução não seriam engessados de forma genérica, mas variariam de acordo com o risco arquitetural. Na execução prática, esse acordo inicial se consolidou nas descrições individuais dos cards: componentes críticos de backend e API (como o gateway FastAPI no SCRUM-1 e SCRUM-37) trazem um DoD estrito exigindo cobertura de testes via PyTest acima de 80% e validação matemática de schemas, enquanto tarefas de infraestrutura e conectividade sandbox (como o SCRUM-32) focam em critérios de isolamento de rede e persistência SSH. O DoD técnico, portanto, tangibilizou na Sprint o nível de rigor exigido pelo Manifesto planejado no início do projeto.
+
+Antes de qualquer código ser escrito, o time debateu no rito de planejamento como garantir a qualidade de componentes tão distintos quanto uma API e uma infraestrutura de rede. 
+
+O acordo firmado, que originou o Manifesto de Engenharia T-SONAIR dentro do Épico SCRUM-5, estabeleceu que os critérios do Definition of Done (DoD) da solução não seriam engessados de forma genérica, mas variariam de acordo com o risco arquitetural. 
+
+Na execução prática, esse acordo inicial se consolidou nas descrições individuais dos cards: componentes críticos de backend e API (como o gateway FastAPI no SCRUM-1 e SCRUM-37) trazem um DoD estrito exigindo cobertura de testes via PyTest acima de 80% e validação matemática de schemas, enquanto tarefas de infraestrutura e conectividade sandbox (como o SCRUM-32) focam em critérios de isolamento de rede e persistência SSH. 
+
+O DoD técnico, portanto, tangibilizou na Sprint o nível de rigor exigido pelo Manifesto planejado no início do projeto.
 
 #### 3. Acordo de Entrega e o AI Auditor como DoD de Processo Universal (A Execução)
-No nível do processo e da agilidade pura, o time estabeleceu na concepção do projeto uma regra inegociável de conformidade: nenhuma entrega seria aceita na Sprint sem a respectiva evidência documental e rastreabilidade técnica. Na agilidade tradicional, esse DoD de execução dependeria de uma checklist textual que o desenvolvedor poderia burlar por pressa ou esquecimento. Para garantir o cumprimento desse acordo humano sem falhas durante a execução, desenvolvemos o AI Auditor, um motor de automação conectado via webhooks à API v3 do Jira Cloud. Na prática das Sprints, sempre que qualquer card tentava ser movido para a coluna de concluído (Done), o robô assumia o papel de auditor do processo. Se a issue não contivesse o link da documentação oficial gerada no Confluence ou o PDF com o dossiê técnico anexado, o AI Auditor barrava o fechamento, aplicava o rollback automático do status e inseria o log de violação de compliance (conforme registrado no histórico real dos tickets SCRUM-38, SCRUM-37 e SCRUM-33), transformando o acordo de entrega inicial em uma trava sistêmica intransponível.
+
+No nível do processo e da agilidade pura, o time estabeleceu na concepção do projeto uma regra inegociável de conformidade: nenhuma entrega seria aceita na Sprint sem a respectiva evidência documental e rastreabilidade técnica. Na agilidade tradicional, esse DoD de execução dependeria de uma checklist textual que o desenvolvedor poderia burlar por pressa ou esquecimento. 
+
+Para garantir o cumprimento desse acordo humano sem falhas durante a execução, desenvolvemos o AI Auditor, um motor de automação conectado via webhooks à API v3 do Jira Cloud. 
+
+Na prática das Sprints, sempre que qualquer card tentava ser movido para a coluna de concluído (Done), o robô assumia o papel de auditor do processo. 
+
+Se a issue não contivesse o link da documentação oficial gerada no Confluence ou o PDF com o dossiê técnico anexado, o AI Auditor barrava o fechamento, aplicava o rollback automático do status e inseria o log de violação de compliance (conforme registrado no histórico real dos tickets SCRUM-38, SCRUM-37 e SCRUM-33), transformando o acordo de entrega inicial em uma trava sistêmica intransponível.
 
 
 ## 🎯 1. Cenário de Negócio e Contexto Acadêmico (PUC-Rio)
