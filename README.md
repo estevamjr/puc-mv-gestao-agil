@@ -1,5 +1,11 @@
 # T-SONAIR // Command Multiplexer & Governance Platform
 
+Workflow de solução:
+- Começou mapeando o escopo tradicionalmente (Features ➡️ Épicos ➡️ Histórias).
+- Usou o DoD clássico para parir a primeira versão funcional (V0).
+- Usou a V0 + IA para gerenciar o restante do próprio projeto.
+- Terminou o MVP com uma esteira automatizada onde o processo de engenharia se defende sozinho por código.
+
 ## 0. Destaques Acadêmicos
 
 ### Governança Ágil Automatizada & Engenharia de Requisitos
