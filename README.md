@@ -129,7 +129,7 @@ O artefato `product-backlog.pdf` reflete fielmente o conceito real de **Backlog 
 
 ## 🔗 7. Links Oficiais do Ecossistema
 
-* **Board de Engenharia (Miro):** [Acessar Mapeamento Interativo da Lean Inception](https://miro.com/app/board/uXjVHCAbeZY=/?share_link_id=376170150905)
+* **Board de Engenharia (Miro):** [Acessar Mapeamento Interativo da Lean Inception](https://miro.com/app/board/uXjVHCAbeZY=/)
 * **Protótipo de Interface (Figma):** [Acessar Workspace de Design do T-SONAIR](https://www.figma.com/design/95RlL4wEon5z49d2Yp5ky4/T-SONAiR-Prototype?node-id=0-1&t=l8K6IxAg117a73AB-1)
 * **Demonstração em Vídeo (YouTube):** [Assista ao Showcase Técnico do T-SONAIR](https://youtu.be/xN829EZsen8?si=Cvh9seyb364ozTpF)
 
